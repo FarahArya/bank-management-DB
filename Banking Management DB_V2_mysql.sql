@@ -33,7 +33,7 @@ CREATE TABLE `Customer` (
 
 CREATE TABLE `Account` (
   `account_id` int PRIMARY KEY AUTO_INCREMENT,
-  `account_number` string,
+  `account_number` varchar(32),
   `person_id` int,
   `account_type` int,
   `balance` decimal(15,2),

@@ -26,7 +26,6 @@ INSERT INTO `Branch` (`branch_name`, `branch_country`, `branch_city`, `branch_ad
 -- Employees: realistic birthdates, joining dates older than customers
 -- Customers: realistic birthdates, recent joining/creation dates
 INSERT INTO `Person` (`person_type`, `first_name`, `last_name`, `email`, `contact_number`, `date_of_birth`, `address`, `joining_date`, `created_at`) VALUES
--- Employees (person_id: 1-10)
 (1, 'John', 'Doe', 'john.doe@bankexample.com', '+1-212-555-1001', '1979-04-15', '101 Park Ave, New York, USA', '2008-03-15', NOW()),
 (1, 'Jane', 'Smith', 'jane.smith@bankexample.com', '+1-310-555-1002', '1982-08-21', '202 West Blvd, Los Angeles, USA', '2009-07-10', NOW()),
 (1, 'Robert', 'Johnson', 'robert.johnson@bankexample.com', '+1-617-555-1003', '1975-11-30', '303 Beacon St, Boston, USA', '2007-05-25', NOW()),
@@ -37,8 +36,6 @@ INSERT INTO `Person` (`person_type`, `first_name`, `last_name`, `email`, `contac
 (1, 'Linda', 'Garcia', 'linda.garcia@bankexample.com', '+49-30-555-1008', '1983-03-19', '808 Alexanderplatz, Berlin, Germany', '2012-12-12', NOW()),
 (1, 'Mark', 'Miller', 'mark.miller@bankexample.com', '+81-3-555-1009', '1976-10-27', '909 Shinjuku, Tokyo, Japan', '2008-08-08', NOW()),
 (1, 'Patricia', 'Taylor', 'patricia.taylor@bankexample.com', '+61-2-555-1010', '1981-07-16', '1010 Darling St, Sydney, Australia', '2009-04-04', NOW()),
-
--- Customers (person_id: 11-20)
 (2, 'Alice', 'Anderson', 'alice.anderson@example.com', '+1-212-555-2001', '1990-03-14', '1101 Broadway, New York, USA', '2020-01-10', NOW()),
 (2, 'Peter', 'Thomas', 'peter.thomas@example.com', '+1-310-555-2002', '1992-05-29', '1202 Vine St, Los Angeles, USA', '2020-02-15', NOW()),
 (2, 'Susan', 'Jackson', 'susan.jackson@example.com', '+1-617-555-2003', '1988-11-03', '1303 Commonwealth Ave, Boston, USA', '2020-03-20', NOW()),
