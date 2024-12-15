@@ -86,18 +86,30 @@ VALUES
 ('ACC-1005', 2, '5500000000000007', 901, '2026-04-30'),
 ('ACC-1002', 1, '4111111111111116', 321, '2026-03-31');
 
-INSERT INTO Transaction (account_id, transaction_type, amount, time, description, transaction_date) 
+INSERT INTO Transaction (account_id, transaction_type, amount, time, description) 
 VALUES
-('ACC-1003', 1, 100.00, NOW(), 'Initial Deposit', '2024-02-11'),
-('ACC-1007', 2, 50.00, NOW(), 'ATM Withdrawal', '2022-07-18'),
-('ACC-1001', 1, 500.00, NOW(), 'ACH Deposit', '2024-12-31'),
-('ACC-1009', 1, 200.00, NOW(), 'Check Deposit', '2023-10-27'),
-('ACC-1010', 2, 100.00, NOW(), 'Online Purchase', '2024-05-10'),
-('ACC-1002', 1, 300.00, NOW(), 'Cash Deposit', '2021-12-12'),
-('ACC-1009', 2, 150.00, NOW(), 'Bill Payment', '2022-08-14'),
-('ACC-1005', 3, 1000.00, NOW(), 'Wire Transfer In', '2024-09-09'),
-('ACC-1008', 2, 200.00, NOW(), 'Debit Card Purchase', '2020-11-01'),
-('ACC-1006',1, 400.00, NOW(), 'Mobile Deposit', '2023-12-07');
+('ACC-1003', 1, 100.00, ('2024-02-21 09:10:05'), 'Initial Deposit'),
+('ACC-1007', 2, 50.00, ('2022-07-18 12:22:41'), 'ATM Withdrawal'),
+('ACC-1001', 1, 500.00, ('2024-12-31 11:56:26'), 'ACH Deposit'),
+('ACC-1009', 1, 200.00, ('2023-10-27 08:15:03'), 'Check Deposit'),
+('ACC-1010', 2, 100.00, ('2024-05-10 07:27:15'), 'Online Purchase'),
+('ACC-1002', 1, 300.00, ('2021-12-12 10:48:00'), 'Cash Deposit'),
+('ACC-1009', 2, 150.00, ('2022-08-14 11:07:52'), 'Bill Payment'),
+('ACC-1005', 3, 1000.00, ('2024-09-09 00:12:38'), 'Wire Transfer In'),
+('ACC-1008', 2, 200.00, ('2020-11-01 12:55:11'), 'Debit Card Purchase'),
+('ACC-1006',1, 400.00, ('2023-12-07 10:31:22'), 'Mobile Deposit');
+
+('ACC-1003', 1, 100.00, , 'Initial Deposit'),
+('ACC-1007', 2, 50.00, , 'ATM Withdrawal',
+('ACC-1001', 1, 500.00, , 'ACH Deposit'),
+('ACC-1009', 1, 200.00, , 'Check Deposit'),
+('ACC-1010', 2, 100.00, , 'Online Purchase'),
+('ACC-1002', 1, 300.00, , 'Cash Deposit'),
+('ACC-1009', 2, 150.00, , 'Bill Payment'),
+('ACC-1005', 3, 1000.00, , 'Wire Transfer In'),
+('ACC-1008', 2, 200.00, , 'Debit Card Purchase'),
+('ACC-1006',1, 400.00, , 'Mobile Deposit');
+
 
 INSERT INTO Loan (account_id, loan_id, loan_type, loan_amount, interest_rate, start_date, end_date) 
 VALUES
