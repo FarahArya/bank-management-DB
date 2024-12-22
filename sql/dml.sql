@@ -69,28 +69,18 @@ VALUES
 
 
 
--- Drop constraint wrongly referencing the person table (repeated reference)
-ALTER TABLE "Customer"
-DROP CONSTRAINT "Customer_created_by_id_fkey";
-
--- Add constraint that correctly references branch table
-ALTER TABLE "Customer"
-ADD CONSTRAINT "Customer_created_by_id_fkey"
-FOREIGN KEY (created_by_id)
-REFERENCES "Branch" (branch_id);
-
 INSERT INTO "Customer" (person_id, created_by_id) 
 VALUES
-(10001, 1),
-(10009, 2),
-(10011, 3),
-(10027, 4),
-(10028, 5),
-(10051, 6),
-(10101, 7),
-(10189, 8),
-(10194, 9),
-(10266, 10);
+(10001, 10532),
+(10009, 10532),
+(10011, 10532),
+(10027, 10109),
+(10028, 10251),
+(10051, 10532),
+(10101, 10532),
+(10189, 10507),
+(10194, 10015),
+(10266, 10036);
 
 
 
@@ -171,4 +161,3 @@ VALUES
 (3904, 400.00, '2029-02-15'),
 (2013, 1200.00, '2025-03-17'),
 (4372,2000.00, '2025-01-19');
-
