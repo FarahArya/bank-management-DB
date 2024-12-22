@@ -1,4 +1,4 @@
--- Account number of acounts opened by Laura Lee
+-- Account number of all accounts opened by Laura Lee
 
 SELECT account_number
 FROM "Account" a
