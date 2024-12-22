@@ -1,3 +1,5 @@
+-- List the shortened version of the account number (first 5 characters), and the formatted balance of all active accounts.
+
 SELECT
     account_id,
     SUBSTRING(account_number FROM 1 FOR 5) 
