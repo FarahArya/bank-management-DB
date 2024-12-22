@@ -1,9 +1,10 @@
 -- To find the name, age, and address of cardholders for the three cards expiring soonest
 
 SELECT 
-    p.first_name,
-    p.last_name,
-    EXTRACT(YEAR FROM AGE(CURRENT_DATE, p.date_of_birth)) AS age,
+    p.first_name || ' ' || p.last_name name,
+    EXTRACT(YEAR FROM 
+			AGE(CURRENT_DATE, p.date_of_birth)) 
+			AS age,
     p.address,
     c.card_number,
     c.expiry_date
