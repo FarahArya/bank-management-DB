@@ -149,7 +149,7 @@ VALUES
 
 
 
-INSERT INTO "Loan_Payment" (loan_id, amount, paid_at) 
+INSERT INTO "Loan_Payment" (loan_payment_id, amount, paid_at) 
 VALUES
 (0290, 500.00, '2024-04-29'),
 (2832, 600.00, '2024-06-14'),
