@@ -1,4 +1,4 @@
--- To find the name, age, and address of cardholders for the three cards expiring soonest
+-- Find the name, age, and address of cardholders for the three cards expiring soonest
 
 SELECT 
     p.first_name || ' ' || p.last_name name,
